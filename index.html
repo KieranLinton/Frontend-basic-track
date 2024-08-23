@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html id="root">
+
+<head>
+  <!-- icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#000000" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <!-- main -->
+  <title>Front Example</title>
+  <meta
+    name="description"
+    content="A simple frontend coding example with vanilla css, html and js." />
+  <meta charset="utf-8" />
+
+  <!-- styling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preload" href="https://fonts.googleapis.com" />
+  <link rel="preload" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+
+  <!-- scripts -->
+  <script defer="defer" src="scripts/sticky-navbar-helper.js"></script>
+  <script defer="defer" src="scripts/mobile-nav-toggle.js"></script>
+
+</head>
+
+<body>
+  <header id="headerBar" class="header-bar">
+    <img
+      aria-hidden="true"
+      class="header-bar__logo"
+      src="media/images/general/logo.png" />
+    <h1 class="aria-only">K-Example</h1>
+    <p class="aria-only">
+      A simple frontend coding example with vanilla css, html and js.
+    </p>
+    <div class="main-navigation">
+      <button id="mainNavigationOpen" aria-hidden="true" class="main-navigation__toggle material-symbols-outlined">
+        menu
+      </button>
+      <nav id="mainNavigationMenu" aria-label="Main Navigation" class="main-navigation__nav">
+        <button id="mainNavigationClose" aria-hidden="true" class="main-navigation__toggle material-symbols-outlined">
+          arrow_forward
+        </button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__list-item">
+            <a href="#" class="main-navigation__link">Home</a>
+          </li>
+          <li class="main-navigation__list-item">
+            <a href="#" class="main-navigation__link">About us</a>
+          </li>
+          <li class="main-navigation__list-item">
+            <a href="#" class="main-navigation__link">Solutions</a>
+          </li>
+          <li class="main-navigation__list-item">
+            <a href="#" class="main-navigation__link">Our work</a>
+          </li>
+          <li class="main-navigation__list-item">
+            <a href="#" class="main-navigation__link">Blog</a>
+          </li>
+          <li class="main-navigation__list-item">
+            <a href="#" class="main-navigation__link">Career</a>
+          </li>
+          <li class="main-navigation__list-item">
+            <a href="#contactUs" class="main-navigation__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="welcome-banner centered-large-width">
+    <figure class="welcome-banner__figure">
+      <img
+        alt="Landscape banner with mountains and trees"
+        class="welcome-banner__img"
+        src="media/images/general/welcome-banner-2520w.jpg"
+        srcset="
+          media/images/general/welcome-banner-400w.jpg 400w,
+          media/images/general/welcome-banner-800w.jpg 800w,
+          media/images/general/welcome-banner-2520w.jpg 1808w
+        " />
+    </figure>
+    <div class="welcome-banner__inner-content">
+      <h2>Welcome to 1xINTERNET</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, se d do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+    <p class="welcome-banner__outer-content centered-small-width">
+      In aliquam sem fringilla ut morbi. Nam at lectus urna duis. Sapien et
+      ligula ullamcorper malesuada proin libero nunc consequat interdum. Velit
+      laoreet id donec ultrices tincidunt. Aenean euismod elementum nisi quis
+      eleifend quam adipiscing. Sapien et ligula ullamcorper malesuada proin
+      libero nunc consequat interdum. Velit laoreet id donec ultrices
+      tincidunt. Aenean euismod elementum nisi quis eleifend quam adipiscing.
+    </p>
+  </section>
+  <section class="our-team centered-large-width">
+    <h2 class="our-team__title">Meet our team</h2>
+    <p class="aria-only">A list of some of our key team members</p>
+    <ul class="our-team__list">
+      <li class="our-team__list-item">
+        <article class="our-team__profile-item">
+          <figure>
+            <img
+              class="our-team__profile-picture"
+              loading="lazy"
+              alt="Yellow plastic chicken"
+              src="media/images/profile-pictures/chicken-960w.jpg"
+              srcset="
+                media/images/profile-pictures/chicken-200w.jpg 200w,
+                media/images/profile-pictures/chicken-960w.jpg 960w
+              " />
+          </figure>
+          <h3 class="our-team__employee-name">Toby Cluck</h3>
+          <p class="our-team__employee-title">Senior Mascot</p>
+        </article>
+      </li>
+      <li class="our-team__list-item">
+        <article class="our-team__profile-item">
+          <figure>
+            <img
+              class="our-team__profile-picture"
+              loading="lazy"
+              alt="Cute small dog in blanket"
+              src="media/images/profile-pictures/lenny-800w.jpg"
+              srcset="
+                media/images/profile-pictures/lenny-400w.jpg 400w,
+                media/images/profile-pictures/lenny-800w.jpg 800w,
+                media/images/profile-pictures/lenny-2000w.jpg 2000w,
+                media/images/profile-pictures/lenny-4000w.jpg 4000w
+              " />
+          </figure>
+          <h3 class="our-team__employee-name">Lenny Barnberg</h3>
+          <p class="our-team__employee-title">Sales Executive</p>
+        </article>
+      </li>
+      <li class="our-team__list-item">
+        <article class="our-team__profile-item">
+          <figure>
+            <img
+              class="our-team__profile-picture"
+              loading="lazy"
+              alt="Small green plant on desk"
+              src="media/images/profile-pictures/pant-800.jpg"
+              srcset="
+                media/images/profile-pictures/pant-400w.jpg 400w,
+                media/images/profile-pictures/pant-800w.jpg 800w,
+                media/images/profile-pictures/pant-1800w.jpg 1800w
+              " />
+          </figure>
+          <h3 class="our-team__employee-name">Sam McPlantface</h3>
+          <p class="our-team__employee-title">Desk Plant</p>
+        </article>
+      </li>
+      <li class="our-team__list-item">
+        <article class="our-team__profile-item">
+          <figure>
+            <img
+              class="our-team__profile-picture"
+              loading="lazy"
+              alt="Small siamese cat climbing mattress"
+              src="media/images/profile-pictures/olie-800.jpg"
+              srcset="
+                media/images/profile-pictures/olie-400w.jpg 400w,
+                media/images/profile-pictures/olie-800w.jpg 800w,
+                media/images/profile-pictures/olie-2252w.jpg 2252w
+              " />
+          </figure>
+          <h3 class="our-team__employee-name">Ollie Wally</h3>
+          <p class="our-team__employee-title">Mischief Manager</p>
+        </article>
+      </li>
+      <li class="our-team__list-item">
+        <article class="our-team__profile-item">
+          <figure>
+            <img
+              class="our-team__profile-picture"
+              loading="lazy"
+              alt="Empty profile"
+              src="media/images/profile-pictures/unknown-user-626w.jpg"
+              srcset="
+                media/images/profile-pictures/unknown-user-400w.jpg 400w,
+                media/images/profile-pictures/unknown-user-626w.jpg 626w
+              " />
+          </figure>
+          <h3 class="our-team__employee-name">Harry Simons</h3>
+          <p class="our-team__employee-title">QA Engineer</p>
+        </article>
+      </li>
+      <li class="our-team__list-item">
+        <article class="our-team__profile-item">
+          <figure>
+            <img
+              class="our-team__profile-picture"
+              loading="lazy"
+              alt="Black and white cat looking grumpy"
+              src="media/images/profile-pictures/booboo-800w.jpg"
+              srcset="
+                media/images/profile-pictures/booboo-400w.jpg 400w,
+                media/images/profile-pictures/booboo-800w.jpg 800w,
+                media/images/profile-pictures/booboo-2000w.jpg 2000w,
+                media/images/profile-pictures/booboo-4000w.jpg 4000w
+              " />
+          </figure>
+          <h3 class="our-team__employee-name">Booboo</h3>
+          <p class="our-team__employee-title">Lead Grump</p>
+        </article>
+      </li>
+      <li class="our-team__list-item">
+        <article class="our-team__profile-item">
+          <figure>
+            <img
+              class="our-team__profile-picture"
+              loading="lazy"
+              alt="Fat tabby cat"
+              src="media/images/profile-pictures/berty-800w.jpg"
+              srcset="
+                media/images/profile-pictures/berty-400w.jpg 400w,
+                media/images/profile-pictures/berty-800w.jpg 800w,
+                media/images/profile-pictures/berty-1920w.jpg 1920w
+              " />
+          </figure>
+          <h3 class="our-team__employee-name">Bertie Bertikins</h3>
+          <p class="our-team__employee-title">Blubber Developer</p>
+        </article>
+      </li>
+      <li class="our-team__list-item">
+        <article class="our-team__profile-item">
+          <figure>
+            <img
+              class="our-team__profile-picture"
+              loading="lazy"
+              alt="Unknown profile"
+              src="media/images/profile-pictures/unknown-user-626w.jpg"
+              srcset="
+                media/images/profile-pictures/unknown-user-400w.jpg 400w,
+                media/images/profile-pictures/unknown-user-626w.jpg 626w
+              " />
+          </figure>
+          <h3 class="our-team__employee-name">Kieran Powell</h3>
+          <p class="our-team__employee-title">Some guy</p>
+        </article>
+      </li>
+    </ul>
+  </section>
+  <section class="work-with-us centered-small-width">
+    <figure>
+      <img
+        alt="Tabby cat with paw in puzzle box"
+        src="media/images/general/cat-puzzle-660w.jpg"
+        class="work-with-us__image"
+        srcset="
+          media/images/general/cat-puzzle-400w.jpg 400w,
+          media/images/general/cat-puzzle-660w.jpg 660w
+        " />
+    </figure>
+    <div>
+      <h2>Why work with us</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, se d do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien et
+        ligula ullamcorper malesuada proin libero nunc consequat interdum.
+        Velit laoreet id donec ultrices tincidunt. Aenean euismod elementum
+        nisi quis eleifend quam adipiscing.
+      </p>
+    </div>
+  </section>
+  <section id="contactUs" class="contact-us centered-large-width">
+    <h2 class="contact-us__title">Contact</h2>
+    <p class="aria-only">
+      Reach out to us about any questions or propositions.
+    </p>
+    <form class="contact-us__form">
+      <label
+        for="first-name"
+        aria-label="First name of the person sending message"
+        class="aria-only">First Name</label>
+      <input
+        type="text"
+        id="firstName"
+        name="first-name"
+        placeholder="Firstname*"
+        class="contact-us__text-input"
+        required />
+
+      <label
+        for="last-name"
+        aria-label="Last name of the person sending message"
+        class="aria-only">Last Name</label>
+      <input
+        type="text"
+        id="lastName"
+        name="last-name"
+        placeholder="Lastname*"
+        class="contact-us__text-input"
+        required />
+
+      <label
+        for="email"
+        aria-label="Email of the person sending message"
+        class="aria-only">Email</label>
+      <input
+        type="email"
+        id="fullName"
+        name="full-name"
+        placeholder="E-mail*"
+        class="contact-us__email-input"
+        required />
+
+      <label
+        for="comment"
+        aria-label="Message that the person would like to send"
+        class="aria-only">Comment</label>
+      <textarea
+        id="comment"
+        name="comment"
+        placeholder="Comment"
+        class="contact-us__text-area"></textarea>
+      <div class="contact-us__conditions">
+        <input
+          type="checkbox"
+          id="termsAndConditions"
+          name="terms-and-conditions"
+          required />
+        <label
+          for="terms-and-conditions"
+          aria-label="Acknowledgement and agreement to the terms and conditions">Terms and conditions*</label>
+      </div>
+
+      <button type="submit" class="contact-us__submit">Submit</button>
+    </form>
+  </section>
+  <footer class="footer-bar">
+    <nav aria-label="Footer Navigation">
+      <ul class="footer-bar_list">
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Copyright</a></li>
+        <li><a href="#">1xINTERNET</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
+</html>
