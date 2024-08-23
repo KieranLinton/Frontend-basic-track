@@ -1,0 +1,17 @@
+/* WORK WITH US */
+.work-with-us {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: var(--section-gap);
+}
+
+.work-with-us__image {
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: 3px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*# sourceMappingURL=work-with-us.css.map */
