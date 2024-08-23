@@ -1,0 +1,27 @@
+/* CONTACT US */
+.contact-us {
+  margin-top: var(--section-gap);
+}
+
+.contact-us__title {
+  text-align: center;
+}
+
+.contact-us__form {
+  max-width: 30rem;
+  margin-inline: auto;
+  margin-top: 1rem;
+}
+
+.contact-us__text-area {
+  resize: none;
+  min-height: 10em;
+}
+
+.contact-us__conditions {
+  margin-top: 0.5rem;
+}
+
+.contact-us__submit {
+  margin-top: 1rem;
+}

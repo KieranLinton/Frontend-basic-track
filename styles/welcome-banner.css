@@ -1,0 +1,42 @@
+/* WELCOME BANNER */
+
+.welcome-banner {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 1rem;
+}
+
+.welcome-banner__figure {
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  min-height: min(20vw, 10em);
+  background-color: black;
+}
+
+.welcome-banner__img {
+  position: absolute;
+  bottom: -10vw;
+}
+
+.welcome-banner__inner-content {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  align-self: center;
+
+  padding: 1rem;
+
+  color: var(--invert-hsl);
+  z-index: 300;
+}
+
+.welcome-banner__outer-content {
+  padding-inline: 0;
+}
