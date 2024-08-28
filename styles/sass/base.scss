@@ -7,15 +7,6 @@
   border: none;
   background: none;
   color: inherit;
-
-  --primary-hsl: hsl(0, 100%, 50%);
-  --main-hsl: hsl(0, 0%, 0%);
-  --main-hover-hsl: hsl(0, 0%, 46%);
-  --invert-hsl: hsl(0, 0%, 100%);
-  --secondary-hsl: hsl(262, 83%, 58%);
-  --section-gap: 4rem;
-
-  --focus-shadow: 0px 0px 0px 2px var(--secondary-hsl);
 }
 
 :root {
@@ -54,32 +45,30 @@ textarea {
   margin-top: 0.5rem;
 
   background-color: hsl(0, 0%, 94%);
-}
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-  border: none;
-  outline: 0;
+  &:focus {
+    border: none;
+    outline: 0;
 
-  -webkit-box-shadow: var(--focus-shadow);
-  -moz-box-shadow: var(--focus-shadow);
-  box-shadow: var(--focus-shadow);
+    -webkit-box-shadow: $main-hsl;
+    -moz-box-shadow: $main-hsl;
+    box-shadow: $main-hsl;
+  }
 }
 
 button {
   width: fit-content;
   padding: 0.75em 2em;
   cursor: pointer;
-}
 
-button:hover {
-  border: unset;
-  outline: 0;
+  &:hover {
+    border: unset;
+    outline: 0;
 
-  -webkit-box-shadow: var(--focus-shadow);
-  -moz-box-shadow: var(--focus-shadow);
-  box-shadow: var(--focus-shadow);
+    -webkit-box-shadow: $main-hsl;
+    -moz-box-shadow: $main-hsl;
+    box-shadow: $main-hsl;
+  }
 }
 
 /* GENERAL */

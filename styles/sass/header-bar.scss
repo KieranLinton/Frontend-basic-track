@@ -12,16 +12,16 @@
 
   transition: top 0.3s;
   background-color: white;
-}
 
-.header-bar--scroll-visible {
-  top: 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+  &.header-bar--scroll-visible {
+    top: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
 
-.header-bar__logo {
-  height: 1.5em;
-  width: auto;
+  .header-bar__logo {
+    height: 1.5em;
+    width: auto;
+  }
 }
 
 /* MAIN NAVIGATION */
@@ -30,66 +30,68 @@
   margin-left: auto;
   height: fit-content;
   z-index: 500;
-}
 
-.main-navigation__toggle {
-  display: none;
-  fill: var(--main-hsl);
-  cursor: pointer;
-  background-color: unset;
-  box-shadow: unset;
-
-  padding: 0.2rem;
-}
-
-.main-navigation__toggle:hover {
-  color: var(--main-hover-hsl);
-  box-shadow: unset;
-}
-
-.main-navigation__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.main-navigation__link {
-  font-family: "Roboto Condensed", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.main-navigation__link:hover {
-  color: var(--main-hover-hsl);
-}
-
-@media (max-width: 45em) {
   .main-navigation__toggle {
-    display: block;
-  }
-
-  .main-navigation__nav {
     display: none;
-  }
+    fill: $main-hsl;
+    cursor: pointer;
+    background-color: unset;
+    box-shadow: unset;
 
-  .main-navigation__nav.menu-active {
-    position: fixed;
-    display: block;
+    padding: 0.2rem;
 
-    max-width: 10rem;
-    right: 0;
-    top: 0;
-    height: 100vh;
-
-    background: black;
-    color: var(--invert-hsl);
-
-    padding: 2rem 3rem;
+    &:hover {
+      color: $main-hsl;
+      box-shadow: unset;
+    }
   }
 
   .main-navigation__list {
-    margin-top: 1rem;
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    .main-navigation__link {
+      font-family: "Roboto Condensed", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+
+      &:hover {
+        color: $main-hover-hsl;
+      }
+    }
+  }
+
+  // Mobile mode
+
+  @media (max-width: 45em) {
+    .main-navigation__toggle {
+      display: block;
+    }
+
+    .main-navigation__nav {
+      display: none;
+
+      &.menu-active {
+        position: fixed;
+        display: block;
+
+        max-width: 10rem;
+        right: 0;
+        top: 0;
+        height: 100vh;
+
+        background: black;
+        color: $invert-hsl;
+
+        padding: 2rem 3rem;
+
+        .main-navigation__list {
+          margin-top: 1rem;
+          flex-direction: column;
+        }
+      }
+    }
   }
 }

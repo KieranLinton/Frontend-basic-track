@@ -1,7 +1,16 @@
-@import "base.css";
-@import "header-bar.css";
-@import "welcome-banner.css";
-@import "our-team.css";
-@import "work-with-us.css";
-@import "contact-us.css";
-@import "footer.css";
+$primary-hsl: hsl(0, 100%, 50%);
+$main-hsl: hsl(0, 0%, 0%);
+$main-hover-hsl: hsl(0, 0%, 46%);
+$invert-hsl: hsl(0, 0%, 100%);
+$secondary-hsl: hsl(262, 83%, 58%);
+
+$focus-shadow: 0px 0px 0px 2px $secondary-hsl;
+$section-gap: 4rem;
+
+@import "base";
+@import "header-bar";
+@import "welcome-banner";
+@import "our-team";
+@import "work-with-us";
+@import "contact-us";
+@import "footer";

@@ -4,7 +4,7 @@
   "description": "A simple frontend coding example with scss, html and js",
   "main": "index.html",
   "scripts": {
-    "dev": "sass --watch styles/sass:styles/css"
+    "dev": "sass --watch styles/sass/main.scss:styles/css/main.css"
   },
   "author": "Kieran",
   "license": "ISC",
